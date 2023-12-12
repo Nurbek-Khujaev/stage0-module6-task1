@@ -34,7 +34,7 @@ public class Dog extends Animal {
 
     public String getDescription() {
         if (this.getHasFur()) {
-            return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and fur.";
+            return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and a fur.";
         } else {
             return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and no fur.";
         }

@@ -34,7 +34,7 @@ public class Bird extends Animal {
 
     public String getDescription() {
         if (this.getHasFur()) {
-            return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and fur. Moreover, it has 2 wings and can fly.";
+            return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and a fur. Moreover, it has 2 wings and can fly.";
         } else {
             return "This animals is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and no fur. Moreover, it has 2 wings and can fly.";
         }
