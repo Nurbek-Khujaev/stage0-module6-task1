@@ -1,40 +1,48 @@
 package com.epam.mjc.stage0;
 
-import java.awt.*;
-
 public class Animal {
 
     private String color;
     private int numberOfPaws;
     private boolean hasFur;
 
-    public void Color(String color) {
-
-        System.out.println(color);
-
+    public Animal(String color, int numberOfPaws, boolean hasFur) {
+        this.color = color;
+        this.numberOfPaws = numberOfPaws;
+        this.hasFur = hasFur;
     }
 
-    public void NumberOfPaws(int numberOfPaws) {
-
-        System.out.println(numberOfPaws);
-
+    public String getColor() {
+        return color;
     }
 
-    public void HasFur(boolean hasFur) {
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-        System.out.println(hasFur);
+    public int getNumberOfPaws() {
+        return numberOfPaws;
+    }
 
+    public void setNumberOfPaws(int numberOfPaws) {
+        this.numberOfPaws = numberOfPaws;
+    }
+
+    public boolean getHasFur() {
+        return hasFur;
+    }
+
+    public void setHasFur(boolean hasFur) {
+        this.hasFur = hasFur;
     }
 
 
     public String getDescription() {
-
         if (hasFur) {
-            return "This animal is mostly " + color + ". It has " + numberOfPaws + " and a fur";
+            return "This animal is mostly " + color + ". It has " + numberOfPaws + " paws and fur.";
         } else {
-            return "This animal is mostly " + color + ". It has " + numberOfPaws + " and no fur";
+            return "This animal is mostly " + color + ". It has " + numberOfPaws + " paws and no fur.";
         }
-
     }
 
 }
